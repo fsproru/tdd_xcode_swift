@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Photo {
+struct Photo: Codable {
     let id: String
     let title: String
     let isPublic: Bool

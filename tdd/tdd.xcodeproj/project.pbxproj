@@ -15,6 +15,8 @@
 		3491369924DCEAAF00B43F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3491369724DCEAAF00B43F43 /* LaunchScreen.storyboard */; };
 		349136A424DCEAAF00B43F43 /* tddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349136A324DCEAAF00B43F43 /* tddTests.swift */; };
 		349136AF24DCEAAF00B43F43 /* tddUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349136AE24DCEAAF00B43F43 /* tddUITests.swift */; };
+		349136BE24DCEC6D00B43F43 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349136BD24DCEC6D00B43F43 /* Photo.swift */; };
+		349136C124DCF0C600B43F43 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349136C024DCF0C600B43F43 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		349136AA24DCEAAF00B43F43 /* tddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tddUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349136AE24DCEAAF00B43F43 /* tddUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tddUITests.swift; sourceTree = "<group>"; };
 		349136B024DCEAAF00B43F43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349136BD24DCEC6D00B43F43 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		349136C024DCF0C600B43F43 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		3491368B24DCEAAE00B43F43 /* tdd */ = {
 			isa = PBXGroup;
 			children = (
+				349136BC24DCEADF00B43F43 /* Models */,
 				3491368C24DCEAAE00B43F43 /* AppDelegate.swift */,
 				3491368E24DCEAAE00B43F43 /* SceneDelegate.swift */,
 				3491369024DCEAAE00B43F43 /* ContentView.swift */,
@@ -121,6 +126,7 @@
 		349136A224DCEAAF00B43F43 /* tddTests */ = {
 			isa = PBXGroup;
 			children = (
+				349136BF24DCF09A00B43F43 /* Models */,
 				349136A324DCEAAF00B43F43 /* tddTests.swift */,
 				349136A524DCEAAF00B43F43 /* Info.plist */,
 			);
@@ -134,6 +140,22 @@
 				349136B024DCEAAF00B43F43 /* Info.plist */,
 			);
 			path = tddUITests;
+			sourceTree = "<group>";
+		};
+		349136BC24DCEADF00B43F43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				349136BD24DCEC6D00B43F43 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		349136BF24DCF09A00B43F43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				349136C024DCF0C600B43F43 /* Photo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349136BE24DCEC6D00B43F43 /* Photo.swift in Sources */,
 				3491368D24DCEAAE00B43F43 /* AppDelegate.swift in Sources */,
 				3491368F24DCEAAE00B43F43 /* SceneDelegate.swift in Sources */,
 				3491369124DCEAAE00B43F43 /* ContentView.swift in Sources */,
@@ -277,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349136C124DCF0C600B43F43 /* Photo.swift in Sources */,
 				349136A424DCEAAF00B43F43 /* tddTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

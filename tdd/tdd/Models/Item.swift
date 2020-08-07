@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Item: Codable {
+struct Item: Codable, Identifiable {
     let id: String
-    let title: String
+    var title: String
     var isCompleted: Bool = false
 
     mutating func complete() {

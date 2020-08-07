@@ -1,5 +1,5 @@
 //
-//  FlickrServiceTests.swift
+//  ItemServiceTests.swift
 //  tddTests
 //
 //  Created by Alex Tamoykin on 8/6/20.
@@ -9,12 +9,12 @@
 import XCTest
 @testable import tdd
 
-class FlickrServiceTests: XCTestCase {
+class ItemServiceTests: XCTestCase {
 
     func testGettingItems() throws {
         let service = tdd.ItemService(isTest: true)
         let items = service.getItems()
-        XCTAssertEqual(items.count, 2)
+        XCTAssertEqual(items.count, 3)
     }
 
 }

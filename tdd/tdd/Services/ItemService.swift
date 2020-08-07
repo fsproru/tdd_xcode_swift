@@ -26,8 +26,8 @@ class ItemService {
 
     private func getMockItems() -> [Item] {
         guard
-            let path = Bundle(for: type(of: self)).path(forResource: "items", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+            let url = Bundle(for: type(of: self)).url(forResource: "items", withExtension: "json"),
+            let data = try? Data(contentsOf: url)
         else {
             return []
         }

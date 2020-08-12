@@ -16,23 +16,33 @@ class ItemService {
     }
 
     func getItems() -> [Item] {
-        if (self.isTest) {
-            return self.getMockItems()
-        }
-
-        // otherwise fetch it from the network as usual
-        return []
-    }
-
-    private func getMockItems() -> [Item] {
         guard
-            let url = Bundle(for: type(of: self)).url(forResource: "items", withExtension: "json"),
-            let data = try? Data(contentsOf: url)
+            let data = self.isTest ? self.getMockItemData() : self.getServerItemData()
         else {
             return []
         }
 
+        // otherwise fetch it from the network as usual
+        return self.parseData(data: data)
+    }
+
+    func parseData(data: Data) -> [Item] {
         let items = try? JSONDecoder().decode([Item].self, from: data)
         return items ?? []
+    }
+
+    private func getMockItemData() -> Data? {
+        guard
+            let url = Bundle(for: type(of: self)).url(forResource: "items", withExtension: "json"),
+            let data = try? Data(contentsOf: url)
+        else {
+            return nil
+        }
+
+        return data
+    }
+
+    private func getServerItemData() -> Data? {
+        return nil
     }
 }
